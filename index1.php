@@ -11,16 +11,16 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="img/cat11.jpg" style="height:300px;" style="width: 100px;"class="img-fluid rounded" />
+                <img src="cat11.jpg" style="height:300px;" style="width: 100px;"class="img-fluid rounded" />
             </div>
             <div class="col-sm-3">
-                <img src="img/cat22.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
-                <img src="img/cat33.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
-                <img src="img/cat44.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
+                <img src="cat22.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
+                <img src="cat33.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
+                <img src="cat44.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
             </div>
             <div class="col-sm-3">
-                <img src="img/cat55.jpg" style="height: 200px;" style="width: 50px;" class="img-fluid" />
-                <img src="img/cat66.jpg" style="height: 100px;" style="width: 50px;" class="img-fluid img-thumbnail" />
+                <img src="cat55.jpg" style="height: 200px;" style="width: 50px;" class="img-fluid" />
+                <img src="cat66.jpg" style="height: 100px;" style="width: 50px;" class="img-fluid img-thumbnail" />
             </div>
         </div> <!-- Close Row -->
     </div> <!-- Close container -->
