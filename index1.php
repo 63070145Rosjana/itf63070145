@@ -15,9 +15,9 @@
             </div>
             <div class="col-md-3">
                 <div class="col-md-10">
-                    <img src="cat22.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
-                    <img src="cat33.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
-                    <img src="cat44.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
+                    <img src="cat22.jpg" style="height:100px;" style="width: 100px;"class="img-fluid img-thumbnail" />
+                    <img src="cat33.jpg" style="height:100px;" style="width: 100px;"class="img-fluid img-thumbnail" />
+                    <img src="cat44.jpg" style="height:100px;" style="width: 100px;"class="img-fluid img-thumbnail" />
                 </div>
             </div>
             <div class="col-sm-3">
