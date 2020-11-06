@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <img src="cat11.jpg" style="height:300px;" style="width: 100px;"class="img-fluid rounded" />
             </div>
             <div class="col-sm-3">
@@ -20,7 +20,7 @@
                     <img src="cat44.jpg" style="height:100px;" style="width: 50px;"class="img-fluid img-thumbnail" />
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-3">
                 <img src="cat55.jpg" style="height: 200px;" style="width: 50px;" class="img-fluid" />
                 <img src="cat66.jpg" style="height: 100px;" style="width: 50px;" class="img-fluid img-thumbnail" />
             </div>
