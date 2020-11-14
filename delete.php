@@ -7,7 +7,7 @@ if (mysqli_connect_errno($conn))
 }
 
 // sql to delete a record
-$sql = "DELETE FROM MyGuests WHERE id='$delete_id'";
+$sql = "DELETE FROM guestbook WHERE id='$delete_id'";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record deleted successfully";
