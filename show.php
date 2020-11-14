@@ -26,7 +26,6 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
             <th width="350"> <div align="center">Comment </div></th>
             <th width="150"> <div align="center">Link </div></th>
             <th width="150"> <div align="center">Action </div></th>
-            <td><center><a class="btn btn-warning" href="edit_r2.php?member_id=<?php echo $crow['member_id']; ?>">Add</a></center></td>
         </thead>
     </tr>
     <?php
@@ -41,13 +40,11 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
             <a class="btn btn-warning" href="edit_r2.php?member_id=<?php echo $crow['member_id']; ?>">Delete</a>
         </center></td>
     </tr>
-    <tr>
-        <td><center><a class="btn btn-warning" href="edit_r2.php?member_id=<?php echo $crow['member_id']; ?>">Add</a></center></td>
-    </tr>
     <?php
     }
     ?>
     </table>
+    <td><center><a class="btn btn-warning" href="edit_r2.php?member_id=<?php echo $crow['member_id']; ?>">Add</a></center></td>
 </div>
 <?php
 mysqli_close($conn);
