@@ -43,7 +43,9 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <?php
     }
     ?>
-    <td><center><a class="btn btn-warning" href="edit_r2.php?member_id=<?php echo $crow['member_id']; ?>">Add</a></center></td>
+    <tr>
+        <center><a class="btn btn-warning" href="edit_r2.php?member_id=<?php echo $crow['member_id']; ?>">Add</a></center>
+    </tr>
     </table>
 </div>
 <?php
