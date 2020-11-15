@@ -37,7 +37,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
         <td><?php echo $Result['Comment'];?></td>
         <td><?php echo $Result['Link'];?></td>
         <td><center><a class="btn btn-warning" href='userupdateform.php?member_id=$row[0]'>edit</a>
-            <a class="btn btn-warning" href='delete.php?Name=$Result[0]'>delete</a>
+            <a class="btn btn-warning" href='delete.php?Name=$Result'>delete</a>
         </center></td>
     </tr>
     <?php
