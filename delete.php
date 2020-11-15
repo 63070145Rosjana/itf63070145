@@ -7,7 +7,7 @@ if (mysqli_connect_errno($conn))
 }
 $member_id = $_REQUEST["Name"]
 // sql to delete a record
-$sql = "DELETE FROM guestbook WHERE member_id='$member_id''";
+$sql = "DELETE FROM guestbook WHERE Name='$member_id'";
 $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
  
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม
