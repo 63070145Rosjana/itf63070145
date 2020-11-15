@@ -6,7 +6,7 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 // sql to delete a record
-$sql = "DELETE FROM guestbook WHERE Name='$result'";
+$sql = "DELETE FROM guestbook WHERE Name='$result[0]'";
 
 	
 if (mysqli_query($conn, $sql)) {
