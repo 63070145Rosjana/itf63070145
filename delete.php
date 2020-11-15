@@ -7,14 +7,19 @@ if (mysqli_connect_errno($conn))
 }
 // sql to delete a record
 $sql = "DELETE FROM guestbook WHERE Name='$result'";
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
  
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม
 	
-if (mysqli_query($conn, $sql)) {
-  echo "Record deleted successfully";
-} else {
-  echo "Error deleting record: " . mysqli_error($conn);
+	if($result){
+	echo "<script type='text/javascript'>";
+	echo "alert('delete Succesfuly');";
+	echo "window.location = 'ShowMember.php'; ";
+	echo "</script>";
+	}
+	else{
+	echo "<script type='text/javascript'>";
+	echo "alert('Error back to delete again');";
+	echo "</script>";
 }
-
-mysqli_close($conn);
 ?>
