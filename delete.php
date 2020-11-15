@@ -7,8 +7,7 @@ if (mysqli_connect_errno($conn))
 }
 // sql to delete a record
 $sql = "DELETE FROM guestbook WHERE Name='$result'";
- 
-//จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม
+
 	
 if (mysqli_query($conn, $sql)) {
   echo "Record deleted successfully";
