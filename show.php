@@ -29,15 +29,15 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
         </thead>
     </tr>
     <?php
-    while($Result = mysqli_fetch_array($res))
+    while($row = mysqli_fetch_array($result))
     {
     ?>
     <tr>
-        <td><?php echo $Result['Name'];?></div></td>
-        <td><?php echo $Result['Comment'];?></td>
-        <td><?php echo $Result['Link'];?></td>
-        <td><center><a class="btn btn-warning" href='userupdateform.php?member_id=$row[0]'>edit</a>
-            <a class="btn btn-warning" href='delete.php?member_id=$row[0]'>delete</a>
+        <td><?php echo $row['Name'];?></div></td>
+        <td><?php echo $row['Comment'];?></td>
+        <td><?php echo $row['Link'];?></td>
+        <td><center><a class="btn btn-warning" href='userupdateform.php?Name=$row[0]'>edit</a>
+            <a class="btn btn-warning" href='delete.php?Name=$row[0]'>delete</a>
         </center></td>
     </tr>
     <?php

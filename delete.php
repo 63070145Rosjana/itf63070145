@@ -5,9 +5,10 @@ if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-$member_id = $_REQUEST["member_id"];
+$member_id = $_REQUEST["Name"];
 // sql to delete a record
-$sql = "DELETE FROM guestbook WHERE member_id='$member_id'";
+$sql = "DELETE FROM guestbook WHERE member_id='$Name'";
+
 $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
  
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม
@@ -15,7 +16,7 @@ $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_erro
 	if($result){
 	echo "<script type='text/javascript'>";
 	echo "alert('delete Succesfuly');";
-	echo "window.location = 'show.php'; ";
+	echo "window.location = 'ShowMember.php'; ";
 	echo "</script>";
 	}
 	else{
