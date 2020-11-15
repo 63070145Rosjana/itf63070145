@@ -33,12 +33,11 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     {
     ?>
     <tr>
+        <?php $ID = $Result['ID'];?></div>
         <td><?php echo $Result['Name'];?></div></td>
         <td><?php echo $Result['Comment'];?></td>
         <td><?php echo $Result['Link'];?></td>
-        <td><center><a class="btn btn-warning" href='userupdateform.php?member_id=$row[0]'>edit</a>
-            <a class="btn btn-warning" href='delete.php?ID=$id'>delete</a>
-        </center></td>
+        <td><a class="btn btn-warning" href='delete.php?ID=$ID'>delete</a></td>
     </tr>
     <?php
     }
