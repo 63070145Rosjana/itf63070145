@@ -20,3 +20,4 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 ?>
+<tr><a href="show.php"><input type="submit" value="Home" class="btn btn-warning"></a></tr>
