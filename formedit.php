@@ -17,7 +17,7 @@
     </div>
     <div class="form-group">
       <label for="pwd">Edit Comment:</label>
-      <textarea rows="10" cols="10" name = "comment" id="idComment" placeholder="Enter your feel"></textarea><br>  
+      <input type="text" name = "comment" id="idComment" placeholder="Enter your feel"><br>  
       <input type="submit" id="commentBtn">
     </div>
   </form> 
