@@ -2,15 +2,24 @@
 <html>
 <head>
 	<title>Edit Form</title>
-<meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
   <form action = "edit2.php" method = "post" id="CommentForm" >
-    Name want to edit<br>
-    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
-    Edit Comment<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter your feel"></textarea><br>  
-    <input type="submit" id="commentBtn">
+    <div class="form-group">
+      <label for="usr">Name want to edit:</label>
+      <input type="text" name = "name" id="idName" placeholder="Enter Name"><br>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Edit Comment:</label>
+      <textarea rows="10" cols="10" name = "comment" id="idComment" placeholder="Enter your feel"></textarea><br>  
+      <input type="submit" id="commentBtn">
+    </div>
   </form> 
 </body>
 </html>
