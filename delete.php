@@ -25,13 +25,13 @@ $sql = "DELETE FROM guestbook WHERE Name='$name'";
 
 if (mysqli_query($conn, $sql)) {
   echo "Record deleted successfully";
-  echo "Go to homepage";
 } else {
   echo "Error deleting record: " . mysqli_error($conn);
 }
 
 mysqli_close($conn);
 ?>
-<tr><a href="show.php"><input type="submit" value="Home" class="btn btn-warning"></a></tr>
+<tr><center><?php echo "Go to Home page"; ?></center></tr>
+<tr><center><a href="show.php"><input type="submit" value="Home" class="btn btn-warning"></a></center></tr>
 </body>
 </html>
