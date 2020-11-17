@@ -32,10 +32,10 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     {
     ?>
     <tr>
-        <?php $ID = $Result['ID'];?></div>
         <td><?php echo $Result['Name'];?></div></td>
         <td><?php echo $Result['Comment'];?></td>
-        <td><center><a href="formedit.php"><input type="submit" value="Edit" class="btn btn-warning"></a>&nbsp;&nbsp;<a href="fromdelete.php"><input type="submit" value="Delete"  class="btn btn-warning"></a></center></td>
+        <td><center><a href="formedit.php"><input type="submit" value="Edit" class="btn btn-warning"></a>
+        <a href="fromdelete.php"><input type="submit" value="Delete"  class="btn btn-warning"></a></center></td>
     </tr>
     <?php
     }
