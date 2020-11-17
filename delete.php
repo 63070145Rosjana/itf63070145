@@ -31,7 +31,9 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 ?>
-<tr><center><?php echo "Go to Home page"; ?></center></tr>
-<tr><center><a href="show.php"><input type="submit" value="Home" class="btn btn-warning"></a></center></tr>
+<div class="panel-footer">
+  <tr><center><?php echo "Go to Home page"; ?></center></tr>
+  <tr><center><a href="show.php"><input type="submit" value="Home" class="btn btn-warning"></a></center></tr>
+</div>
 </body>
 </html>
