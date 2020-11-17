@@ -14,7 +14,7 @@ $sql = "DELETE FROM guestbook WHERE Name='$name'";
 
 if (mysqli_query($conn, $sql)) {
   echo "Record deleted successfully";
-  echo "Go to homepage"
+  echo "Go to homepage";
 } else {
   echo "Error deleting record: " . mysqli_error($conn);
 }
