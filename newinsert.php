@@ -4,7 +4,7 @@ require('connect.php');
         $num = $_POST['name'];
         $numa = $_POST['weight'];
         $numb = $_POST['height'];
-        $numc = $numa / ($numb**2);
+        $numc = $numa / (($numb/100)**2);
 
         $sql = "INSERT INTO gustbook2 (name, weight, height, bmi) value ('$num','$numa', '$numb', '$numc')";
 
