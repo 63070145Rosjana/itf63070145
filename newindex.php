@@ -49,7 +49,7 @@
 										<td><?php echo $Result['weight'];?></td>
 										<td><?php echo $Result['height'];?></td>
                                         <td><?php echo $Result['bmi'];?></td>
-                                        <td><?php echo'<a href="newdelete.php?id='.$Result['Id'].'">ลบ</a>'?></td>
+                                        <td><?php echo'<a href="newdelete.php?Id='.$Result['Id'].'">ลบ</a>'?></td>
 									</tr>
 									<?php
 										}
