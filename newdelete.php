@@ -1,6 +1,6 @@
 <?php
 	$conn = mysqli_connect('itf45.mysql.database.azure.com', 'rosjana@itf45', 'Pang0990062471', 'itflab');
-	$sql = 'DELETE FROM gustbook2WHERE Id = '.$_GET['Id'].'';
+	$sql = 'DELETE FROM gustbook2 WHERE Id = '.$_GET['Id'].'';
 ?>
 <!DOCTYPE html>
 <html>
