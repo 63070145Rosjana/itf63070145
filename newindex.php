@@ -37,6 +37,7 @@
 										<th>น้ำหนัก</th>
 										<th>ส่วนสูง</th>
 										<th>bmi</th>
+										<th>การจัดการ</th>
 									</tr>
 								</thead>
 								<tbody>
