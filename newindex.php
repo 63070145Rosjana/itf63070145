@@ -18,7 +18,7 @@
 					<div class="card-body">
 						<div class="row">
 							<div class="col-6"><h1 class="text-monospace">ข้อมูล</h1></div>
-							<div class="col-6 text-right"><a href="insert.php" class="btn btn-success btn-sm font-weight-bold">เพิ่ม</a></div>
+							<div class="col-6 text-right"><a href="newinsert.php" class="btn btn-success btn-sm font-weight-bold">เพิ่ม</a></div>
 						</div>
 						<div class="table-success">
 							<?php
