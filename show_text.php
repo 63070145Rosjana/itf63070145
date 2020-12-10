@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
     div {
-    background-image: url('img1.jpg');
+    background-image: url('cat1.jpg');
     }
 </style>
 </head>
