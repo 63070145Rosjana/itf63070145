@@ -24,20 +24,21 @@
         <td><?php echo $_POST['Story'];?></td>
         <br>
         <td><?php echo $_POST['gender'];
-            $a = $_POST['gender'];
-            if ($a == "sad");
+            $text = $_POST['gender'];
+            if ($text=="sad")
             {
-                print("สู้ๆ");
+                echo "สู้ๆ";
             }
-            elseif ($a == "normal");
+            elseif ($a=="normal")
             {
-                print("ทำต่อไป");
+                echo "ทำต่อไป";
             }
-            elseif ($a == "happy");
+            elseif ($a == "happy")
             {
-                print("ดีแล้วนะ");
+                echo "ดีแล้วนะ";
             }
-        ?></td>
+        ?>
+       </td>
     </div>
 </body>
 
