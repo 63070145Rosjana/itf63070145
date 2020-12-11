@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
     body {
-    background-image: url('cat11.jpg');
+        background-image: url('cat11.jpg');
     }
 </style>
 </head>
@@ -22,6 +22,7 @@
         <td><?php echo $_POST['Date'];?></td>
         <td><?php echo $_POST['Diary'];?></td>
         <td><?php echo $_POST['Story'];?></td>
+        <td><?php echo $_POST['gender'];?></td>
     </div>
 </body>
 
