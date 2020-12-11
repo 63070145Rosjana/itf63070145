@@ -29,11 +29,11 @@
             {
                 echo "สู้ๆ";
             }
-            elseif ($a=="normal")
+            elseif ($text=="normal")
             {
                 echo "ทำต่อไป";
             }
-            elseif ($a == "happy")
+            elseif ($text == "happy")
             {
                 echo "ดีแล้วนะ";
             }
