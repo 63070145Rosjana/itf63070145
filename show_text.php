@@ -22,7 +22,22 @@
         <td><?php echo $_POST['Date'];?></td>
         <td><?php echo $_POST['Diary'];?></td>
         <td><?php echo $_POST['Story'];?></td>
-        <td><?php echo $_POST['gender'];?></td>
+        <br>
+        <td><?php echo $_POST['gender'];
+            $a = $_POST['gender'];
+            if ($a == "sad");
+            {
+                print("สู้ๆ");
+            }
+            elseif ($a == "normal");
+            {
+                print("ทำต่อไป");
+            }
+            elseif ($a == "happy");
+            {
+                print("ดีแล้วนะ");
+            }
+        ?></td>
     </div>
 </body>
 
