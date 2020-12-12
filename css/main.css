@@ -380,5 +380,6 @@ textarea.input100 {
 }
 
 .mybuttun {
-  margin-left: 20%;
+  margin-left: 5%;
 }
+.mybuttun img:hover{opacity: 0.8;}
