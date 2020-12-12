@@ -140,7 +140,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 5px;
   position: relative;
   background-color: #f2f2f2;
 }
@@ -148,7 +148,7 @@ iframe {
 .wrap-contact100 {
   width: 550px;
   background: transparent;
-  padding: 50px 0px 160px 0px;
+  padding: 25px 0px 80px 0px;
 }
 
 
@@ -164,10 +164,10 @@ iframe {
   font-family: Ubuntu-Bold;
   font-size: 30px;
   color: #403866;
-  line-height: 1.2;
+  line-height: 0.5;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 49px;
+  padding-bottom: 25px;
 }
 
 /*------------------------------------------------------------------
@@ -177,7 +177,7 @@ iframe {
   width: 100%;
   background-color: #fff;
   border-radius: 31px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   position: relative;
   z-index: 1;
 }
@@ -191,7 +191,7 @@ iframe {
   font-family: Ubuntu-Bold;
   font-size: 18px;
   color: #8f8fa1;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 
@@ -258,9 +258,9 @@ textarea.input100 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
   min-width: 150px;
-  height: 62px;
+  height: 50px;
   background-color: transparent;
   border-radius: 31px;
 
