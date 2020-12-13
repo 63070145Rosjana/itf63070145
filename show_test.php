@@ -61,7 +61,7 @@ body {
     z-index: 1;
 }
         .paper-content span p{
-    margin-right: 10%
+    margin-left: 10%
 }
     </style>
 </head>
