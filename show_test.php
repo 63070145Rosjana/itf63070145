@@ -4,179 +4,85 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
-        *{
-    padding:0;
-    margin: 0;
+    @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+
+body {
+    margin: 40px 0 0;
+    background: #91D1D3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.paper {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    min-width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+.paper:before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 60px;
+    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+    background-size: 30px 30px;
+    border-right: 3px solid #D44147;
     box-sizing: border-box;
 }
 
-html{
-    font-size: 10px;
+.paper-content {
+    position: absolute;
+    top: 30px; right: 0; bottom: 30px; left: 60px;
+    background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+    background-size: 30px 30px;
 }
 
-body{
-    height: 100vh;
+.paper-content textarea {
     width: 100%;
-    background-image: url(/img/yen.png);
-    min-height: 100%;
-    background-position: left;
-    background-size: cover;
-}
-
-section{
+    max-width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2.5rem;
+    max-height: 100%;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: mediumblue;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
-.container{
-    max-width: 120rem;
-    padding: 0 1.5rem;
-    margin: 0 auto;
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0,0,0,.6);
 }
-
-.content{
-    display: flex;
-    background-color: #fff;
-    box-shadow: .5rem .5rem 1rem rgba(0,0,0,0.5);
-    opacity: 0.6;
-}
-
-.content-img{
-    flex: 1;
-}
-
-.content-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.content-text{
-    flex: 1.5;
-    padding: 4rem;
-}
-
-.content-text .content-title{
-    font-family: 'Playfair Display', serif;
-    color: #222;
-    font-size: 4rem;
-}
-
-.content-text .content-subtitle{
-    font-size: 2.56rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #444;
-    margin: .5rem 0 2rem;
-}
-
-.content-text .content-paragraph{
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-}
-
-.content-text .btn{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding: 1.5rem 2rem;
-    border: 1px solid #444;
-    color: #444;
-}
-
-
-@media screen and (max-width: 1100px){
-    .content-text{
-        flex: 1;
-    }
-}
-
-@media screen and (max-width: 960px){
-    .content-text .content-paragraph{
-        font-size: 1.4rem;
-        margin-bottom: 1.6rem;
-    }
-
-    .content-text .content-subtitle{
-        font-size: 2rem;
-    }
-
-    .content-text .content-title{
-        font-size: 3.2rem;
-    }
-
-    .content-text .btn{
-        padding: 1rem 1.56rem;
-    }
-}
-
-@media screen and (max-width: 756px){
-    .content{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .content-text .content-paragraph{
-        text-align: justify;
-    }
-
-    .content-img{
-        height: 350px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 456px){
-    .content-text .content-paragraph{
-        font-size: 1.2rem;
-    }
-    .content-text .content-subtitle{
-        font-size: 1.72rem;
-    }
-
-    .content-text .content-title{
-        font-size: 2.7rem;
-    }
+footer a {
+    color: rgba(255,255,255,.8);
 }
     </style>
 </head>
 
 <body>
-    <section>
-        <div class="container">
-            <div class="content">
-                <div class="content-img">
-                    <img src="https://images.unsplash.com/photo-1504364269860-8be73aabdff2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1068&q=80" alt="Body Building">
-                </div>
-                <div class="content-text">
-                    <h2 class="content-title"><?php echo $_POST['name'];?></h2>
-                    <h4 class="content-subtitle"><?php echo $_POST['Date'];?></h4>
-                    <p class="content-paragraph"><?php echo $_POST['Diary'];?></p>
-                    <p class="content-paragraph"><?php echo $_POST['feeling'];
-                                                    $text = $_POST['feeling'];
-                                                    if ($text=="sad")
-                                                    {
-                                                        echo "สู้ๆ";
-                                                    }
-                                                    elseif ($text=="normal")
-                                                    {
-                                                        echo "ทำต่อไป";
-                                                    }
-                                                    elseif ($text == "happy")
-                                                    {
-                                                        echo "ดีแล้วนะ";
-                                                    }
-                                                ?>
-                    </p>
-                    <a href="#" class="btn">View More</a>
-                </div>
-            </div>
+    <div class="paper">
+        <div class="paper-content">
+            <textarea><?php echo $_POST['name'];?></textarea>
         </div>
-    </section>
+    </div>
+        
+    <footer>
+        Inspired by a <a href="https://dribbble.com/shots/2126836-Inch-x-Inch-Sneak-Peek-2" target="_blank">Dribble</a> by Allan Peters
+    </footer>
 </body>
 
 </html>
