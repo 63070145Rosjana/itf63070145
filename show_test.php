@@ -60,9 +60,6 @@ body {
     box-sizing: border-box;
     z-index: 1;
 }
-        .paper-content span p{
-    margin-left: 10%
-}
     </style>
 </head>
 
