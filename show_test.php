@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto);
+ @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Handlee);
 
 body {
@@ -29,7 +29,7 @@ body {
     content: '';
     position: absolute;
     top: 0; bottom: 0; left: 0;
-    width: 60px;
+    width: 50px;
     background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
     background-size: 30px 30px;
     border-right: 3px solid #D44147;
@@ -43,32 +43,22 @@ body {
     background-size: 30px 30px;
 }
 
-.paper-content textarea {
+.paper-content span {
     width: 100%;
     max-width: 100%;
     height: 100%;
     max-height: 100%;
     line-height: 30px;
-    padding: 0 10px;
+    padding: 10px 30px;
     border: 0;
     outline: 0;
     background: transparent;
-    color: mediumblue;
+    color: #000000;
     font-family: 'Handlee', cursive;
     font-weight: bold;
     font-size: 18px;
     box-sizing: border-box;
     z-index: 1;
-}
-
-footer {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 12px;
-    color: rgba(0,0,0,.6);
-}
-footer a {
-    color: rgba(255,255,255,.8);
 }
     </style>
 </head>
@@ -76,9 +66,13 @@ footer a {
 <body>
     <div class="paper">
         <div class="paper-content">
-            <textarea><?php echo $_POST['name'];?></textarea>
+            <b style="font-size: 1.5rem;">Diary : <?php echo $_POST['Diary']?> by : <?php echo $_POST['name']?></b>
+            <b style="font-size: 1.5rem;"><?php echo $_POST['Date']?></b>
+            <br>
+            <span><?php echo $_POST['Story']?></span>
         </div>
     </div>
+
         
     <footer>
         Inspired by a <a href="https://dribbble.com/shots/2126836-Inch-x-Inch-Sneak-Peek-2" target="_blank">Dribble</a> by Allan Peters
