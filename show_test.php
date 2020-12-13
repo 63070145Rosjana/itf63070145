@@ -60,6 +60,9 @@ body {
     box-sizing: border-box;
     z-index: 1;
 }
+        .paper-content span p{
+    margin-right: 40%
+}
     </style>
 </head>
 
@@ -67,7 +70,7 @@ body {
     <div class="paper">
         <div class="paper-content">
             <b style="font-size: 1.5rem;">Diary :<span><?php echo $_POST['Diary']?></span> by :<span><?php echo $_POST['name']?></span></b>
-            <span><b style="text-align:right"><?php echo $_POST['Date']?></b></span>
+            <span><p><?php echo $_POST['Date']?></p></span>
             <br>
             <span><?php echo $_POST['Story']?></span>
         </div>
