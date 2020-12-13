@@ -67,7 +67,7 @@ body {
     <div class="paper">
         <div class="paper-content">
             <b style="font-size: 1.5rem;">Diary :<span><?php echo $_POST['Diary']?></span> by :<span><?php echo $_POST['name']?></span></b>
-            <p style="text-align:right"><?php echo $_POST['Date']?></p>
+            <b style="text-align:right"><?php echo $_POST['Date']?></b>
             <br>
             <span><?php echo $_POST['Story']?></span>
         </div>
