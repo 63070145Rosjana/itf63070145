@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
+    <style>
  @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Handlee);
 
@@ -41,6 +42,13 @@ body {
     top: 30px; right: 0; bottom: 30px; left: 60px;
     background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
     background-size: 30px 30px;
+    display: grid;
+    grid-template-rows: 5px 1fr;
+}
+
+.paper-head {
+    display: grid;
+    grid-template-columns: 33% 1fr 33%;
 }
 
 .paper-content span {
@@ -49,7 +57,8 @@ body {
     height: 100%;
     max-height: 100%;
     line-height: 30px;
-    padding: 10px 30px;
+    padding: 30px;
+    text-indent: 20px;
     border: 0;
     outline: 0;
     background: transparent;
@@ -60,15 +69,31 @@ body {
     box-sizing: border-box;
     z-index: 1;
 }
+
+.paper-items {
+    font-family: 'Handlee', cursive;
+    line-height: 30px;
+    color: #000000;
+}
+
     </style>
+
 </head>
 
 <body>
-    <div class="paper">
+<div class="paper">
         <div class="paper-content">
-            <b style="font-size: 1.5rem;">Diary :<span><?php echo $_POST['Diary']?></span> by :<span><?php echo $_POST['name']?></span></b>
-            <span><b style="font-size: 0.5rem";><?php echo $_POST['Date']?></b></span>
-            <br>
+            <div class="paper-head">
+                <div class="paper-items">
+                    <b>Diary : <?php echo $_POST['Diary']?></b>
+                </div>
+                <div class="paper-items">
+                    <b> by : <?php echo $_POST['name']?></b>
+                </div>
+                <div class="paper-items">
+                    <b> Date : <?php echo $_POST['Date']?></b>
+                </div>
+            </div>
             <span><?php echo $_POST['Story']?></span>
         </div>
     </div>
